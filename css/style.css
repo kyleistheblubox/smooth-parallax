@@ -1,0 +1,219 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+    font-family: amaranth, sans-serif;
+
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type=text], input[type=password], input[type=password2] {
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    height:30px;
+}
+
+input[type=submit] {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:75px;
+    height:30px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0, 0.2);
+}
+
+h2 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+h6 {
+    margin-bottom:5px;
+    font-size:18px;
+}
+
+p {
+   font-family: 'PT Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+html {
+    min-width: 350px;
+}
+
+/* End of reset */
+
+/* Box model Hack*/
+* {
+    box-sizing: border-box;
+    box-sizing: -webkit-border-box;
+    box-sizing: -moz-border-box;
+    -moz-box-sizing: border-box;
+}
+
+*::selection {
+    background: #ffb7b7; /* Safari */
+}
+
+*::-moz-selection {
+	background: #ffb7b7; /* Firefox */
+}
+
+/*-------- Others -------*/
+
+.slide {
+    height: 800px;
+    background-color: #c8c8c8;
+}
+
+.row {
+    margin: 0px;
+}
+
+/* ------------ Spacer -------------*/
+
+.spacer {
+    height: 500px;
+    z-index: -1;
+    background: url('../images/backgrounds/spacer.png') no-repeat;
+    box-shadow: 0px 10px 10px rgba(0,0,0, 0.2) inset;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 120px 75px;
+}
+
+.spacer h1{
+    font-size: 35px;
+    color: #fff;
+    display: inline-block;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.spacer h4 {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(0,0,0, 0.2);
+}
+
+/* ===================================
+=========== Media Screens  ===========
+====================================*/
+
+@media only screen and (max-width: 1200px) {
+
+    /*-------- Spacer section -----------*/
+    .spacer {
+        padding; 125px 0px;
+    }
+    .spacer h1 {
+        width: 90%;
+        font-size: 40px;
+    }
+    
+    .spacer h4 {
+        font-size: 25px;
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    
+    /*-------- Spacer section -----------*/
+    .spacer {
+        padding: 175px 0px;
+    }
+    
+    .spacer h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .spacer h4 {
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 667px) {
+    
+    /*-------- Spacer section -----------*/
+    .spacer {
+        padding: 150px 0px;
+    }
+    
+    .spacer h1 {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .spacer h4 {
+        font-size: 20px;
+    }
+    
+}
