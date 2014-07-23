@@ -1,4 +1,4 @@
-smoth-parallax
+Smooth-parallax
 ==============
 
 Smooth Parallax is a quick plugin I designed primarily for use on smaller parallax spacers however could be modified for full backgrounds, etc. Check out the example at <a href=’http://www.kyleschneiderman.com/examples/parallax/index.php’>http://www.kyleschneiderman.com/examples/parallax/index.php</a>. I plan on making this plugin more easily customizable and add some cool new features. To install simply include the CSS (or at least the section labeled “Spacer” if you already have your own style sheet + resets), include the included parallax.js and include your images. Currently the spacer background image is pointing to “./images/backgrounds/spacer.png”. This option can be changed in the style sheet. 
